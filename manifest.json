@@ -1,0 +1,17 @@
+{
+    "version": "0",
+    "name": "RAS",
+    "require": {
+        "cockpit": "266"
+    },
+    "conditions": [
+	    {"path-exists": "/lib/systemd/system/rasdaemon.service"},
+	    {"path-exists": "/lib/systemd/system/ras-mc-ctl.service"}
+    ],
+    "tools": {
+        "test": {
+            "label": "RAS",
+	    "path": "index.html"
+        }
+    }
+}
